@@ -9,7 +9,7 @@ def index():
         user = request.form["nm"]
         bdate = request.form["bdt"]
 
-        if bdate == "2006-03-14":
+        if bdate == "2006-02-04":
             return render_template("b1.html", name = user)
         else:
             return render_template("b2.html")
