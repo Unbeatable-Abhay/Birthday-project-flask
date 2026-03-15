@@ -2,41 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>wlcm</title>
+    <title>wlcm page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 <hr>
+<h1>Hello there! 👋 <br></h1>
+<h1>It's me Aalu Ji 😀🤧,</h1>
+<p>
+I’m really glad you stopped by. I hope everything in your life is going well and that today has been kind to you. This page is just a small interactive space where I’d like to ask you a few simple questions.
+<br><br>
+But before we start, I just need a tiny bit of information from you. Please enter your name and your birth date below so I can greet you properly.
+<br><br>
+Once you fill that in, we’ll continue and talk a little about how you’re doing today. Ready? Let’s begin!
+</p>
 
-<h1>Hlww Aalu Ji this side. 👋</h1>
-<p>I hope you are doing well and good in your life.<br>Today want to ask you some important things, are you ready to answer???</p>
+<form action = "/" method = "POST">
 
-<form action = "/" method = post>
-
-    <div>
-        <label for = "nm">Name: </label>
+    <div class = "name">
+        <label for = "nm"></label>
         <input type = "text" id = "nm" name = "nm" placeholder = "Enter your name" required>
     </div>
 
     <br>
 
-    <div>
-        <label for = "bdt">Birth date: </label>
+    <div class = "date">
+        <label for = "bdt"></label>
         <input type = "date" id = "bdt" name = "bdt" placeholder = "Enter your birthdate" required>
     </div>
 
     <br>
 
-    <div>
+    <div class = "buttons">
         <label for = "rst"></label>
         <input type = "reset" id = "rst" name = "rst">
-    </div>
-
-    <br>
-
-    <div>
         <label for = "sub"></label>
         <input type = "submit" id = "sub" name = "sub">
     </div>
+
+    <br>
 
 </form>
 
