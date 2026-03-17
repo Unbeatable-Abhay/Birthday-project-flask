@@ -6,29 +6,32 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-<hr>
-<h1>Hello there! 👋 <br></h1>
-<h1>It's me Aalu Ji 😀🤧,</h1>
-<p>
-I’m really glad you stopped by. I hope everything in your life is going well and that today has been kind to you. This page is just a small interactive space where I’d like to ask you a few simple questions.
-<br><br>
-But before we start, I just need a tiny bit of information from you. Please enter your name and your birth date below so I can greet you properly.
-<br><br>
-Once you fill that in, we’ll continue and talk a little about how you’re doing today. Ready? Let’s begin!
-</p>
+
 
 <form action = "/" method = "POST">
 
+    <h1>Hello there! 👋 <br></h1>
+    <h1>It's me Aalu Ji 😀🤧,</h1>
+    <p>
+    I’m really glad you stopped by. I hope everything in your life is going well and that today has been kind to you. This page is just a small interactive space where I’d like to ask you a few simple questions.
+    <br><br>
+    But before we start, I just need a tiny bit of information from you. Please enter your name and your birth date below so I can greet you properly.
+    <br><br>
+    Once you fill that in, we’ll continue and talk a little about how you’re doing today.<br><br> Ready? Let’s begin!
+    </p>
+
+    <br> <br>
+
     <div class = "name">
         <label for = "nm"></label>
-        <input type = "text" id = "nm" name = "nm" placeholder = "Enter your name" required>
+        <input type = "text" id = "nm" name = "nm" placeholder = "username" required>
     </div>
 
     <br>
 
     <div class = "date">
         <label for = "bdt"></label>
-        <input type = "date" id = "bdt" name = "bdt" placeholder = "Enter your birthdate" required>
+        <input type = "date" id = "bdt" name = "bdt" placeholder = "Birthdate..." required>
     </div>
 
     <br>
@@ -39,11 +42,11 @@ Once you fill that in, we’ll continue and talk a little about how you’re doi
         <label for = "sub"></label>
         <input type = "submit" id = "sub" name = "sub">
     </div>
-
     <br>
 
 </form>
 
-<hr>
+
+
 </body>
 </html>
