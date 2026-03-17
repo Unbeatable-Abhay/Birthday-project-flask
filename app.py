@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import os
 
 app = Flask(__name__)
 
@@ -9,7 +10,7 @@ def index():
         user = request.form["nm"]
         bdate = request.form["bdt"]
 
-        if bdate == "2006-02-04":
+        if bdate == "2007-02-04":
             return render_template("b1.html", name = user)
         else:
             return render_template("b2.html")
@@ -17,8 +18,5 @@ def index():
         return render_template("wlcm.html")
 
 
-
-import os
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
